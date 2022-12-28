@@ -1,6 +1,6 @@
 App(
     appid="gem",
-    name="Gem",
+    name="Gem Utils",
     apptype=FlipperAppType.EXTERNAL,
     entry_point="gem_app",
     stack_size=1 * 1024,
