@@ -12,7 +12,7 @@
 #define FLIPPER_LCD_WIDTH 128
 #define FLIPPER_LCD_HEIGHT 64
 
-#define TITLE "Gem Utility"
+#define TITLE "Gem Utils"
 #define SUBTITLE "by FiSk"
 #define TITLE_OFFSET 3
 #define TEXT_OFFSET 10
