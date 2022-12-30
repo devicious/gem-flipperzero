@@ -1,21 +1,6 @@
 #include "gem.h"
 #include "gem_icons.h"
 
-typedef enum {
-    EventTypeTick,
-    EventTypeKey,
-} EventType;
-
-typedef struct {
-    EventType type;
-    InputEvent input;
-} PluginEvent;
-
-typedef struct {
-    int x;
-    int y;
-} PluginState;
-
 static void draw_interface(Canvas* const canvas) {
     // border around the edge of the screen
     //canvas_draw_frame(canvas, 0, 0, FLIPPER_LCD_WIDTH, FLIPPER_LCD_HEIGHT);

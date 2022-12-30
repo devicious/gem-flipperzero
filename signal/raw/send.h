@@ -1,4 +1,4 @@
-// File: send_raw_signal.h
+
 
 #ifndef SEND_RAW_SIGNAL_H
 #define SEND_RAW_SIGNAL_H

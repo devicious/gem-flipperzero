@@ -7,7 +7,6 @@
 #include <input/input.h>
 #include <stdlib.h>
 #include <string.h>
-#include <send.h>
 
 // Global constants
 #define TAG "Gem"
@@ -49,6 +48,5 @@ static void draw_interface(Canvas* const canvas);
 static void render_callback(Canvas* const canvas, void* ctx);
 static void input_callback(InputEvent* input_event, FuriMessageQueue* event_queue);
 static void gem_state_init(PluginState* const plugin_state);
-int32_t gem_app(void* p);
 
 #endif  // GEM_H
