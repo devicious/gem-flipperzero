@@ -1,26 +1,5 @@
-#include <furi.h>
-#include <gui/gui.h>
-#include <gui/elements.h>
-#include <input/input.h>
-#include <stdlib.h>
-#include <string.h>
+#include "gem.h"
 #include "gem_icons.h"
-
-#define TAG "Gem"
-#define DEBUG false
-
-#define FLIPPER_LCD_WIDTH 128
-#define FLIPPER_LCD_HEIGHT 64
-
-#define TITLE "Gem Utils"
-#define SUBTITLE "by FiSk"
-#define TITLE_OFFSET 3
-#define TEXT_OFFSET 10
-
-#define LOGO_HEIGHT 10
-#define LOGO_WIDTH 10
-
-#define START_Y 15
 
 typedef enum {
     EventTypeTick,
@@ -153,6 +132,7 @@ int32_t gem_app(void* p) {
     furi_record_close("gui");
     view_port_free(view_port);
     furi_message_queue_free(event_queue);
+    free(plugin_state);
 
     return 0;
 }
